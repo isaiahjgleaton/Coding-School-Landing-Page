@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gleaton Code Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=REM&display=swap" rel="stylesheet">
+</head>
+<style>
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'REM', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.919);
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+.content {
+    display: flex;
+}
+.banner { 
+    width: 55%;
+    max-width: 100%;
+}
+.text-content {
+    width: 45%;
+    text-align: center;
+    margin-top: 30px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+.banner_img {
+    width: 100%;
+    height: 850px;
+}
+
+@media(max-width: 900px){
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner_img {
+    width: 100%;
+    height: 500px;
+}
+    .text-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="banner">
+                <a href=""><img src="https://i.ibb.co/1dXZ81X/students.jpg" alt="students" class="banner_img"></a>
+            </div>
+            <div class="text-content">
+                <h1 style="padding: 0 4px 0; font-size: 30px;">Sign up For <span style="color: blueviolet;">Gleaton Code Academy</span> Today!</h1>
+                <p style="padding: 0 15px 0; line-height: 20px;">Learn software engineering online and 
+                on your schedule with the #1 rated programming
+                school in the US, without breaking the bank,
+                and with the help of passionate instructors and
+                a heartful community of peers.</p>
+                <p>Enter your information to learn more.</p>
+                <div class="inputs">
+                    <input type="text" placeholder="First Name?" style="padding: 10px; margin: 10px 80px 10px;">
+                    <input type="text" placeholder="Last Name?" style="padding: 10px; margin: 10px 80px 10px;">
+                    <input type="text" placeholder="Email?" style="padding: 10px; margin: 10px 80px 10px;">
+                    <input type="text" placeholder="Phone Number?" style="padding: 10px; margin: 10px 80px 10px;">
+                    <input type="text" placeholder="What State Do You Live In?" style="padding: 10px; margin: 10px 80px 10px;">
+                    <a href="" style=" border-radius: 8px; padding: 10px; margin: 10px 80px 10px; background-color: blueviolet; text-decoration: none; font-size: 20px; color: white;">Sign Me Up!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
